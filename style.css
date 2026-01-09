@@ -5,3 +5,44 @@
     font-weight: normal;
     font-style: normal;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+}
+
+#bg {
+    height: 100vh;
+    aspect-ratio: 2500 / 1670;
+}
+
+.logo {
+    background-color: black;
+    opacity: 80%;
+
+    position: absolute;
+    top: 20vh;
+
+    /* Centrar los elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo > span {
+    font-family: "Norse Bold";
+    color: whitesmoke;
+
+    font-size: 5rem;
+}
+
+.logo > img {
+    height: 100px;
+}
