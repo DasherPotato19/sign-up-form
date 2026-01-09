@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+:root {
+    --content-width: 67.68vw;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -62,4 +66,15 @@ figcaption > a:visited {
 
 figcaption > a:hover {
     color: #DDDDDD;
+}
+
+.form-container {
+    background-color: whitesmoke;
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    width: var(--content-width);
+    height: 100vh;
 }
