@@ -8,6 +8,7 @@
 
 :root {
     --content-width: 67.68vw;
+    --logo-width: calc(100vw - var(--content-width));
 }
 
 * {
@@ -38,6 +39,8 @@ body {
     
     padding-top: 10px;
     padding-bottom: 10px;
+
+    width: var(--logo-width);
 }
 
 .logo > span {
@@ -55,8 +58,10 @@ figcaption {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     bottom: 10px;
+    left: calc((var(--logo-width) - 223.234px) / 2);
 
     color: white;
+    text-align: center;
 }
 
 figcaption > a:link,
