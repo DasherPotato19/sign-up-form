@@ -6,14 +6,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Creato Display';
+    src: url('./fonts/creatodisplay-medium-webfont.woff2') format('woff2'),
+         url('./fonts/creatodisplay-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
     --content-width: 67.68vw;
     --logo-width: calc(100vw - var(--content-width));
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -74,12 +83,31 @@ figcaption > a:hover {
 }
 
 .form-container {
-    background-color: whitesmoke;
+    background-color: #DDDDDD;
 
     position: absolute;
     bottom: 0px;
     right: 0px;
+    top: 0;
 
     width: var(--content-width);
     height: 100vh;
+}
+
+.message {
+    font-family: "Creato Display", sans-serif;
+
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-right: 17vw;
+    padding-bottom: 8vh;
+    padding-top: 12vh;
+
+    height: 314.4px;
+
+    font-size: calc(1vw + 15px);
+}
+
+.form {
+    background-color: white;
 }
