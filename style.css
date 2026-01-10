@@ -111,3 +111,11 @@ figcaption > a:hover {
 .form {
     background-color: white;
 }
+
+.form label {
+    display: block;
+}
+
+form {
+    display: flex;
+}
