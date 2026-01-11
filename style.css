@@ -18,6 +18,10 @@
 :root {
     --content-width: 67.68vw;
     --logo-width: calc(100vw - var(--content-width));
+
+    --link-h: 215.45;
+    --link-s: 56%;
+    --link-l: 37%;
 }
 
 * {
@@ -112,7 +116,7 @@ div .form {
     background-color: white;
     box-shadow: 0 0.2rem 0.2rem #CCCCCC;
 
-    padding-left: 4vw;
+    padding-left: 5vw;
     padding-top: 2vh;
     padding-bottom: 5vh;
 
@@ -128,7 +132,7 @@ div .form {
     font-size: 0.9rem;
 }
 
-form {
+.input-container {
     display: flex;
     gap: 15vw;
 }
@@ -137,4 +141,43 @@ div.left-elements, div.right-elements {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+}
+
+button[type="submit"] {
+    margin-left: 5vw;
+    margin-top: 5vh;
+
+    padding: 8px 45px;
+    border-radius: 12px;
+
+    color: white;
+    background-color: #22467A;
+    border: none;
+
+    font-family: "Creato Display", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#log-in {
+    margin-left: 5vw;
+    margin-top: 3.5vh;
+
+    font-family: "Creato Display", sans-serif;
+    font-size: 1.11rem;
+}
+
+#log-in > a {
+    text-decoration: none;
+    font-weight: 20em;
+    color: hsl(var(--link-h), var(--link-s), var(--link-l));
+}
+
+#log-in > a:hover,
+#log-in > a:focus {
+    --link-l: 70%;
+}
+
+#log-in > a:active {
+    --link-l: 10%
 }
