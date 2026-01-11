@@ -130,6 +130,27 @@ div .form {
 .form label {
     display: block;
     font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.form input {
+    width: 200px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+
+    padding: 0.35rem;
+}
+
+.form input:valid {
+    border-color: green;
+    background-color: rgba(0, 255, 0, 25%);
+}
+
+.form input:user-invalid {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 25%);
 }
 
 .input-container {
@@ -142,6 +163,7 @@ div.left-elements, div.right-elements {
     flex-direction: column;
     gap: 1.2rem;
 }
+
 
 button[type="submit"] {
     margin-left: 5vw;

@@ -28,29 +28,62 @@
                     <div class="left-elements">
                         <p>
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input 
+                               type="text" 
+                               id="first-name" 
+                               name="first-name" 
+                               required 
+                               pattern="^[A-Z][a-z]*(\s[A-Z][a-z]*)?$" 
+                               placeholder="Albert (Richard)" />
                         </p>
                         <p>
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input 
+                               type="email" 
+                               id="email" 
+                               name="email" 
+                               required 
+                               placeholder="name@example.com" />
                         </p>
                         <p>
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input 
+                               type="password" 
+                               id="password" 
+                               name="password" 
+                               required />
                         </p>
                     </div>
                     <div class="right-elements">
                         <p>
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input 
+                               type="text" 
+                               id="last-name" 
+                               name="last-name" 
+                               required 
+                               pattern="^[A-Z][a-z]*(\s[A-Z][a-z]*)?$"
+                               placeholder="Smith (Adams)" />
                         </p>
                         <p>
                             <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" name="phone-number">
+                            <input 
+                               type="tel" 
+                               id="phone" 
+                               name="phone-number"
+                               required 
+                               placeholder="+54 9 3432908435"/>
                         </p>
                         <p>
                             <label for="duration">Amount of days to stay</label>
-                            <input type="number" id="duration" name="duration" min="1" max="20">
+                            <input 
+                               type="number" 
+                               id="duration" 
+                               name="duration" 
+                               min="1" 
+                               max="20"
+                               required 
+                               placeholder="Between 1 and 20"/>
                         </p>
                     </div>
                 </div>
